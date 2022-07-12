@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9a2e49d3ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="img/logo.png" alt="logo" class="logo">
+        </figure>
+    </header>
+    <main>
+        <aside>
+            <figure>
+                <img src="img/logo.png" alt="logo" class="logo">
+            </figure>
+            <img src="img/gpu.png" alt="gpu" class="gpu">
+        </aside>
+        <div class="container">
+            <div class="links">
+                <a href="/login" class="login">Iniciar Sesión</a>
+                <a href="#" class="signup active">Registrarse</a>
+            </div>
+            <form action="#">
+                <div class="nombre-apellido">
+                    <input type="text" name="apellido" placeholder="Nombre">
+                    <input type="text" name="apellido" placeholder="Apellido">
+                </div>
+                <input type="email" name="email" placeholder="Correo Electronico">
+                <div class="localidad-cp">
+                    <input type="text" name="localidad" class="localidad" placeholder="Localidad">
+                    <input type="text" name="codigoPostal" class="cp" placeholder="C.P.">
+                </div>
+                <input type="text" name="direccion" placeholder="Dirección">
+                <input type="password" name="password" placeholder="Contraseña">
+                <input type="password" name="password2" placeholder="Repetir Contraseña">
+                <input type="submit" value="Registrarse" class="submit">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

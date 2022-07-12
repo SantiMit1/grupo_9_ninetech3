@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9a2e49d3ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/"><img src="img/logo.png" alt="logo"></a>
+            <form action="#">
+                <input type="text" name="search" id="search" placeholder="Buscar Producto">
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+            </form>
+            <ul class="desktop">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="/login">Iniciar sesión</a></li>
+                <li><a href="/register">Crear Cuenta</a></li>
+                <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+            <ul>
+                <li><a href="#" id="search-button"><i class="fa-solid fa-search"></i></a></li>
+                <li><a href="#" id="toggle-burger"><i class="fa-solid fa-bars"></i></a href="#"></li>
+                <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div id="burger-menu">
+            <ul class="burger">
+                <li><a href="#">Productos</a></li>
+                <li><a href="/login">Crear cuenta</a></li>
+                <li><a href="/register">Iniciar sesión</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h3 class="titulo"><i class="fa-solid fa-cart-shopping"></i> Productos en su carrito</h3>
+        <section class="products">
+            <article>
+                <div class="details">
+                    <img src="img/Productos/disco ssd.jpg" alt="DISCO SOLIDO SDD 240GB">
+                    <div class="product-name">
+                        <h4>DISCO SOLIDO SSD 240GB KINGSTON A400 SATA III</h4>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="price">
+                    <form>
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad" value="1">
+                    </form>
+                    <p>Precio: $6000</p>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <div class="details">
+                    <img src="img/Productos/gtx 1660.jpg" alt="GTX 1660 SUPER">
+                    <div class="product-name">
+                        <h4>PLACA DE VIDEO EVGA GTX 1660 SUPER SC ULTRA 6GB</h4>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="price">
+                    <form>
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad" value="1">
+                    </form>
+                    <p>Precio: $55000</p>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <div class="details">
+                    <img src="img/Productos/mouse cooler master.jpg" alt="COOLER MASTER MM711">
+                    <div class="product-name">
+                        <h4>MOUSE COOLER MASTER MM711 BLANCO MATTE RGB</h4>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="price">
+                    <form>
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad" value="1">
+                    </form>
+                    <p>Precio: $7500</p>
+                </div>
+            </article>
+        </section>
+        <hr class="divisor">
+        <section class="payment">
+            <form method="GET" action="#">
+                <article>
+                    <p><i class="fa-solid fa-truck"></i> Seleccione forma de envio</p>
+                    <hr>
+                    <div>
+                        <select name="shipment" id="shipment">
+                            <option value="">Seleccione el metodo de envio</option>
+                            <option value="1">Envio normal a domicilio</option>
+                            <option value="2">Envio prioritario</option>
+                            <option value="3">Retiro en el local</option>
+                        </select>
+                    </div>
+                </article>
+                <article>
+                    <p><i class="fa-solid fa-credit-card"></i> Seleccione forma de pago</p>
+                    <hr>
+                    <div>
+                        <select name="paymethod" id="paymethod">
+                            <option value="">Seleccione un metodo de pago</option>
+                            <option value="tarjeta">Tarjeta de credito</option>
+                            <option value="mp">Mercado pago</option>
+                            <option value="pfacil">Pago facil</option>
+                            <option value="rpago">Rapipago</option>
+                        </select>
+                    </div>
+                </article>
+                <article>
+                    <p><i class="fa-solid fa-dollar-sign"></i> Resumen de la compra</p>
+                    <hr>
+                    <div>
+                        <span>Subtotal: $68500</span>
+                        <span>Envio: $1000</span>
+                        <p class="total">Total: $69500</p>
+                        <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Finalizar compra</button>
+                    </div>
+                </article>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <figure>
+            <a href="/"><img src="img/logo.png" alt="logo"></a>
+        </figure>
+        <section class="links">
+            <article>
+                <ul class="site-links">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </article>
+            <article>
+                <ul class="redes">
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+    <script src="js/burger.js"></script>
+</body>
+</html>
