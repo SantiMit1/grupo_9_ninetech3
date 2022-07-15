@@ -3,8 +3,8 @@ let productos = [
         id: 1,
         name: "PLACA DE VIDEO EVGA GTX 1660 SUPER SC ULTRA 6GB",
         price: 75069,
-        oldPrice: 60055,
-        discount: "20% OFF",
+        enOferta: true,
+        discount: 0.20, //numero del 0 al 1
         description: [
             "RENDIMIENTO:",
             "NVIDIA GTX 1660 Super",
@@ -44,8 +44,8 @@ let productos = [
         id: 2,
         name: "DISCO DURO HDD 1 TB WESTERN DIGITAL WD BLUE",
         price: 7349,
-        oldPrice: 8084,
-        discount: "10% OFF",
+        enOferta: true,
+        discount: 0.1,
         description: [
             "Interfaz SATA III (6 GB/s)",
             "Tamaño del búfer 64 MB",
@@ -65,8 +65,8 @@ let productos = [
         id: 3,
         name: "DISCO SOLIDO SSD 240GB KINGSTON A400 SATA III",
         price: 5549,
-        oldPrice: 6843,
-        discount: "19% OFF",
+        enOferta: true,
+        discount: 0.19,
         description: [
             "Capacidad: 240Gb",
             "Factor de forma: 2.5",

@@ -28,14 +28,17 @@
                         </div>
                     <div class="price-product">
                         <div class="precioEspecial">
-
-                            <div class="descuento">
-                                <h2>$<%= producto.price %> </h2>
-                                <% if (producto.oldPrice && producto.discount) { %> 
-                                <p><s>$<%= producto.oldPrice %> </s></p>
-                                <strong><%= producto.discount %> </strong>
-                                <% } %> 
-                            </div>
+                            <% if (producto.enOferta) { %>
+                                <div class="descuento">
+                                    <h2>$<%= Math.floor(producto.price - (producto.price * producto.discount)) %> </h2>
+                                    <p><s>$<%= producto.price %> </s></p>
+                                    <strong><%= producto.discount * 100 %>%OFF </strong>
+                                </div>
+                            <% } else {%>
+                                <div class="descuento">
+                                    <h2>$<%= producto.price %> </h2>
+                                </div>
+                            <% } %> 
                         <div class="precioNinetech">
                             <p><i class="fa-solid fa-hand-holding-dollar"></i>  Precio especial Ninetech</p>
                         </div>
@@ -53,8 +56,11 @@
                     
 
                         <div class="precioLista">
-                            <p class="precioli"><i class="fa-solid fa-square-check"></i>  Precio de lista <strong>$<%= producto.price %></strong></p>
-                            <strong>12 cuotas sin interes de $<%= Math.floor(producto.price/12) %></strong>
+                            <% if (producto.enOferta) { %>
+                                <strong>12 cuotas sin interes de $<%= Math.floor((producto.price - (producto.price * producto.discount))/12) %></strong>
+                            <% } else { %>
+                                <strong>12 cuotas sin interes de $<%= Math.floor(producto.price/12) %></strong>
+                            <% } %> 
                             <img src="/img/ahora12.png" alt="">
                         </div>
 
@@ -136,6 +142,6 @@
        </section>
     </main>
     <%- include("./partials/footer.ejs") %> 
-    <script src="js/burger.js"></script>
+    <script src="/js/burger.js"></script>
 </body>
 </html>

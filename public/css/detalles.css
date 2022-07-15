@@ -180,17 +180,6 @@ main .product-specification {
     border-left: 5px solid #A48A7B;
 }
 
-.main-section div .precioLista .precioli, .main-section div .precioLista .precioli i {
-    color: #A48A7B;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.main-section div .precioLista .precioli strong {
-    color: black;
-    font-size: 25px;
-}
-
 
 .main-section div .precioEspecial {
     margin-bottom: 0%;

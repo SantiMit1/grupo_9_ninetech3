@@ -39,29 +39,33 @@
         </section>
         <h2 class="divisor">OFERTAS</h2>
         <section class="products">
-            <% for(let i = 0; i <= 2; i++) { %>
-                <article>
-                    <div class="details">
-                        <h4><%= productos[i].name %> </h4>
-                        <p>$<%= productos[i].price %>  <span>$<%= productos[i].oldPrice %> </span></p>
-                        <a href="/productos/detalles/<%= productos[i].id %> ">Comprar</a>
-                    </div>
-                    <img src="/img/Productos/<%= productos[i].image %> " alt="DISCO DURO HDD 1TB">
-                </article>
-            <% } %> 
+            <% productos.forEach(producto => { %>
+                <% if (producto.enOferta) { %>
+                    <article>
+                        <div class="details">
+                            <h4><%= producto.name %> </h4>
+                            <p>$<%= Math.floor(producto.price - (producto.price * producto.discount)) %>  <span>$<%= producto.price %> </span></p>
+                            <a href="/productos/detalles/<%= producto.id %> ">Comprar</a>
+                        </div>
+                        <img src="/img/Productos/<%= producto.image %> " alt="DISCO DURO HDD 1TB">
+                    </article>
+                <% } %>
+            <% }) %>
         </section>
         <h2 class="divisor">PRODUCTOS DESTACADOS</h2>
         <section class="products">
-            <% for(i = 3; i < productos.length; i++) { %> 
-                <article>
-                    <div class="details">
-                        <h4><%= productos[i].name %> </h4>
-                        <p><%= productos[i].price %> </p>
-                        <a href="/productos/detalles/<%= productos[i].id %> ">Comprar</a>
-                    </div>
-                    <img src="/img/Productos/<%= productos[i].image %> " alt="">
-                </article>
-            <% } %> 
+            <% productos.forEach(producto => { %>
+                <% if (!producto.enOferta) { %>
+                    <article>
+                        <div class="details">
+                            <h4><%= producto.name %> </h4>
+                            <p>$<%= producto.price %> </p>
+                            <a href="/productos/detalles/<%= producto.id %> ">Comprar</a>
+                        </div>
+                        <img src="/img/Productos/<%= producto.image %> " alt="">
+                    </article>
+                <% } %>
+            <% }) %>
         </section>
     </main>
     <%- include("./partials/footer.ejs") %> 
