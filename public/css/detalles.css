@@ -217,7 +217,11 @@ main .product-specification {
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 20px;
+    width: 50%;
+}
 
+.precioNinetech {
+    width: 50%;
 }
 
 .descuento h2 {
@@ -322,8 +326,9 @@ section.descriptionSection .descriptionSectionDetails h2{
     margin-bottom: 20px;
 }
 
-section.descriptionSection .descriptionSectionDetails .details span{
+section.descriptionSection .descriptionSectionDetails .details li{
     margin-top: 3px;
+    list-style: none;
 }
 
 
@@ -331,12 +336,6 @@ hr {
     width: 100%;
     margin: 20px 0;
 }
-
-.descriptionSectionCompatibility hr {
-    width: 100%;
-    margin-top: 30px;
-}
-
 
 section.similarProducts h2 {
     text-align: center;
@@ -473,6 +472,7 @@ section.similarProducts .similarProd a:hover {
 
     .contenedor .img-container img{
         width: 400px;
+        max-height: 450px;
         transition: all 500ms;
     }
 

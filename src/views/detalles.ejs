@@ -14,27 +14,27 @@
                <div class="detail-left">
                 <div class="tittleDesk">
                     
-                    <h2>MICROPROCESADOR AMD RYZEN 5600G 4.4 GHZ AM4</h2>
-                    <p>MODELO: 100-100000252BOX | GTIN: 730143313414</p>
-                    
+                    <h2><%= producto.name %> </h2>
+                    <br>                    
                 </div>
                 
                      <div class="img-container">
-                         <img src="/img/Productos/cpu ryzen.jpg" alt="">
+                         <img src="/img/Productos/<%= producto.image %> " alt="">
                      </div>
                </div>
                     <div class="product-specification">
                         <div class="product-tittle">
-                            <h2>MICROPROCESADOR AMD RYZEN 5600G 4.4 GHZ AM4</h2>
-                             <P>MODELO: 100-100000252BOX | GTIN: 730143313414</P>
+                            <h2><%= producto.name %> </h2>
                         </div>
                     <div class="price-product">
                         <div class="precioEspecial">
 
                             <div class="descuento">
-                                <h2>$ 37389</h2>
-                                <p><s>$ 43629</s></p>
-                                <strong>15% OFF</strong>
+                                <h2>$<%= producto.price %> </h2>
+                                <% if (producto.oldPrice && producto.discount) { %> 
+                                <p><s>$<%= producto.oldPrice %> </s></p>
+                                <strong><%= producto.discount %> </strong>
+                                <% } %> 
                             </div>
                         <div class="precioNinetech">
                             <p><i class="fa-solid fa-hand-holding-dollar"></i>  Precio especial Ninetech</p>
@@ -53,8 +53,8 @@
                     
 
                         <div class="precioLista">
-                            <p class="precioli"><i class="fa-solid fa-square-check"></i>  Precio de lista <strong>$48606</strong></p>
-                            <strong>12 cuotas sin interes de $4050.50</strong>
+                            <p class="precioli"><i class="fa-solid fa-square-check"></i>  Precio de lista <strong>$<%= producto.price %></strong></p>
+                            <strong>12 cuotas sin interes de $<%= Math.floor(producto.price/12) %></strong>
                             <img src="/img/ahora12.png" alt="">
                         </div>
 
@@ -82,38 +82,19 @@
 
        <section class="descriptionSection">
             <div class="descriptionSectionDetails">
-                <h2>Descripción</h2>
                 <div class="detailsTittle">
-                    <p>*Chequear compatibilidad con motherboards antes de adquirir*</p>
-                    <br>
                     <h2>Especificaciones:</h2>
                 </div>
                 <div class="details">
-                    <span># de núcleos de CPU 6</span>
-                    <span># de los hilos 12</span>
-                    <span># de núcleos de GPU 7</span>
-                    <span>Reloj base 3,9 GHz</span>
-                    <span>Reloj de impulso máximo Hasta 4,4 GHz</span>
-                    <span>Caché L2 total 3 MB</span>
-                    <span>Caché L3 total 16 MB</span>
-                    <span>Desbloqueado  sí</span>
-                    <span>CMOS TSMC 7nm FinFET</span>
-                    <span>Paquete AM4</span>
-                    <span>Versión PCI Express® PCIe® 3.0</span>
-                    <span>Solución térmica (PIB) Wraith Stealth</span>
-                    <span>TDP / TDP predeterminado 65W</span>
-                    <span>cTDP 45-65W</span>
-                    <span>Temperaturas máximas 95 ° C</span>
-                    <br>
+                    <ul>
+                        <% producto.description.forEach(element => { %>
+                            <li><%= element %> </li>
+                        <% }) %>
+                    </ul>
                 </div>
                 <hr>
             </div>
-            <div class="descriptionSectionCompatibility">
-                <div class="CompatibilityTittle"><h2>Compatibilidad</h2><br></div>
-                <span>AMD: AM4</span>
-            </div>
         </section>
-        <hr>
        <section class="similarProducts">
             <h2>PRODUCTOS SIMILARES</h2>
             <div class="productListing">

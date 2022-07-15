@@ -1,6 +1,10 @@
+let productos = require("../database/productos")
+
 let controller = {
     index: (req, res) => {
-        res.render("home");
+        res.render("home", {
+            productos: productos
+        });
     }
 }
 
