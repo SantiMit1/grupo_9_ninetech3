@@ -1,45 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("./partials/head.ejs") %> 
     <title>Detalles</title>
-    <link rel="stylesheet" href="css/detalles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/detalles.css">
     <script src="https://kit.fontawesome.com/9a2e49d3ae.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/"><img src="img/logo.png" alt="logo"></a>
-            <form action="#">
-                <input type="text" name="search" id="search" placeholder="Buscar Producto">
-                <button type="submit"><i class="fa-solid fa-search"></i></button>
-            </form>
-            <ul class="desktop">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="/login">Iniciar sesión</a></li>
-                <li><a href="/register">Crear Cuenta</a></li>
-                <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-            <ul>
-                <li><a href="#" id="search-button"><i class="fa-solid fa-search"></i></a></li>
-                <li><a href="#" id="toggle-burger"><i class="fa-solid fa-bars"></i></a href="#"></li>
-                <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-        </nav>
-        <div id="burger-menu">
-            <ul class="burger">
-                <li><a href="#">Productos</a></li>
-                <li><a href="/login">Crear cuenta</a></li>
-                <li><a href="/register">Iniciar sesión</a></li>
-            </ul>
-        </div>
-    </header>
+    <%- include("./partials/header.ejs") %> 
     <main>
        <section class="main-section">
            <div class="contenedor">
@@ -52,7 +20,7 @@
                 </div>
                 
                      <div class="img-container">
-                         <img src="img/Productos/cpu ryzen.jpg" alt="">
+                         <img src="/img/Productos/cpu ryzen.jpg" alt="">
                      </div>
                </div>
                     <div class="product-specification">
@@ -78,7 +46,7 @@
 
                         <div class="payMP">
                             <p>Paga con Mercado Pago</p>
-                            <img src="img/logoMP.png" alt="">
+                            <img src="/img/logoMP.png" alt="">
                             <input class="button" type="button" value="CALCULAR CUOTAS" name="">
                         </div>
 
@@ -87,7 +55,7 @@
                         <div class="precioLista">
                             <p class="precioli"><i class="fa-solid fa-square-check"></i>  Precio de lista <strong>$48606</strong></p>
                             <strong>12 cuotas sin interes de $4050.50</strong>
-                            <img src="img/ahora12.png" alt="">
+                            <img src="/img/ahora12.png" alt="">
                         </div>
 
                         <div class="cantidad-button">
@@ -150,7 +118,7 @@
             <h2>PRODUCTOS SIMILARES</h2>
             <div class="productListing">
                 <article class="similarProd">
-                    <div class="simProdImg"><img src="img/Productos/fuente cooler master.jpg" width="200px" alt="FUENTE COOLER MASTER 850W"></div>
+                    <div class="simProdImg"><img src="/img/Productos/fuente cooler master.jpg" width="200px" alt="FUENTE COOLER MASTER 850W"></div>
                     <div class="details">
                         <h3 class="productSimDetail">$ 36289</h3>
                         <p>FUENTE COOLER MASTER 850W V2 80+ GOLD FULL MODULAR</p>
@@ -158,7 +126,7 @@
                     </div>
                 </article>
                 <article class="similarProd">
-                    <div class="simProdImg"><img src="img/Productos/gtx 1660.jpg"  alt="EVGA GTX 1660"></div>
+                    <div class="simProdImg"><img src="/img/Productos/gtx 1660.jpg"  alt="EVGA GTX 1660"></div>
                     <div class="details">
                         <h3 class="productSimDetail">$ 36289</h3>
                         <p>PLACA DE VIDEO EVGA GTX 1660 SUPER SC ULTRA 6GB</p>
@@ -166,7 +134,7 @@
                     </div>
                 </article>
                 <article class="similarProd">
-                    <div class="simProdImg"><img src="img/Productos/disco hdd.jpg"  alt="DISCO DURO HDD 1 TB"></div>
+                    <div class="simProdImg"><img src="/img/Productos/disco hdd.jpg"  alt="DISCO DURO HDD 1 TB"></div>
                     <div class="details">
                         <h3 class="productSimDetail">$ 36289</h3>
                         <p>DISCO DURO HDD 1 TB WESTERN DIGITAL WD BLUE</p>
@@ -174,7 +142,7 @@
                     </div>
                 </article>
                 <article class="similarProd">
-                    <div class="simProdImg"><img src="img/Productos/disco ssd.jpg"  alt="DISCO SOLIDO SSD 240GB"></div>
+                    <div class="simProdImg"><img src="/img/Productos/disco ssd.jpg"  alt="DISCO SOLIDO SSD 240GB"></div>
                     <div class="details">
                         <h3 class="productSimDetail">$ 36289</h3>
                         <p>DISCO SOLIDO SSD 240GB KINGSTON A400 SATA III</p>
@@ -185,32 +153,8 @@
                 
             </div>
        </section>
-
-
-
-
     </main>
-    <footer>
-        <figure>
-            <a href="/"><img src="img/logo.png" alt="logo"></a>
-        </figure>
-        <section class="links">
-            <article>
-                <ul class="site-links">
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </article>
-            <article>
-                <ul class="redes">
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </article>
-        </section>
-    </footer>
+    <%- include("./partials/footer.ejs") %> 
     <script src="js/burger.js"></script>
 </body>
 </html>
