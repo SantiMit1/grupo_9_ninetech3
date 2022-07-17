@@ -9,7 +9,8 @@ let controller = {
         const id = Number(req.params.id);
         const producto = productos.find(producto => producto.id === id);
         res.render("detalles", {
-            producto: producto
+            producto: producto,
+            productos: productos
         });
     }
 }

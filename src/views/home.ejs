@@ -4,7 +4,6 @@
     <%- include("./partials/head.ejs") %> 
     <title>Ninetech - Home</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/9a2e49d3ae.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <%- include("./partials/header.ejs") %> 
@@ -47,7 +46,7 @@
                             <p>$<%= Math.floor(producto.price - (producto.price * producto.discount)) %>  <span>$<%= producto.price %> </span></p>
                             <a href="/productos/detalles/<%= producto.id %> ">Comprar</a>
                         </div>
-                        <img src="/img/Productos/<%= producto.image %> " alt="">
+                        <img src="/img/Productos/<%= producto.image %> " alt="<%= producto.name %> ">
                     </article>
                 <% } %>
             <% }) %>
@@ -62,7 +61,7 @@
                             <p>$<%= producto.price %> </p>
                             <a href="/productos/detalles/<%= producto.id %> ">Comprar</a>
                         </div>
-                        <img src="/img/Productos/<%= producto.image %> " alt="">
+                        <img src="/img/Productos/<%= producto.image %> " alt="<%= producto.name %> ">
                     </article>
                 <% } %>
             <% }) %>

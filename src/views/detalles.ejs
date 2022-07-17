@@ -4,7 +4,6 @@
     <%- include("./partials/head.ejs") %> 
     <title>Detalles</title>
     <link rel="stylesheet" href="/css/detalles.css">
-    <script src="https://kit.fontawesome.com/9a2e49d3ae.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <%- include("./partials/header.ejs") %> 
@@ -102,42 +101,22 @@
             </div>
         </section>
        <section class="similarProducts">
-            <h2>PRODUCTOS SIMILARES</h2>
+            <h2>OTROS PRODUCTOS</h2>
             <div class="productListing">
-                <article class="similarProd">
-                    <div class="simProdImg"><img src="/img/Productos/fuente cooler master.jpg" width="200px" alt="FUENTE COOLER MASTER 850W"></div>
-                    <div class="details">
-                        <h3 class="productSimDetail">$ 36289</h3>
-                        <p>FUENTE COOLER MASTER 850W V2 80+ GOLD FULL MODULAR</p>
-                        <a href="#">Ver mas</a>
-                    </div>
-                </article>
-                <article class="similarProd">
-                    <div class="simProdImg"><img src="/img/Productos/gtx 1660.jpg"  alt="EVGA GTX 1660"></div>
-                    <div class="details">
-                        <h3 class="productSimDetail">$ 36289</h3>
-                        <p>PLACA DE VIDEO EVGA GTX 1660 SUPER SC ULTRA 6GB</p>
-                        <a href="#">Ver mas</a>
-                    </div>
-                </article>
-                <article class="similarProd">
-                    <div class="simProdImg"><img src="/img/Productos/disco hdd.jpg"  alt="DISCO DURO HDD 1 TB"></div>
-                    <div class="details">
-                        <h3 class="productSimDetail">$ 36289</h3>
-                        <p>DISCO DURO HDD 1 TB WESTERN DIGITAL WD BLUE</p>
-                        <a href="#">Ver mas</a>
-                    </div>
-                </article>
-                <article class="similarProd">
-                    <div class="simProdImg"><img src="/img/Productos/disco ssd.jpg"  alt="DISCO SOLIDO SSD 240GB"></div>
-                    <div class="details">
-                        <h3 class="productSimDetail">$ 36289</h3>
-                        <p>DISCO SOLIDO SSD 240GB KINGSTON A400 SATA III</p>
-                        <a href="#">Ver mas</a>
-                    </div>
-                </article>
-                
-                
+                <% for (let i = 0; i < 4; i++) { %> 
+                    <article class="similarProd">
+                        <div class="simProdImg"><img src="/img/Productos/<%= productos[i].image %> " width="200px" alt="<%= productos[i].name %> "></div>
+                        <div class="details">
+                            <% if (productos[i].enOferta) { %>
+                                <h3 class="productSimDetail">$<%= Math.floor(productos[i].price - (productos[i].price * productos[i].discount)) %> </h3>
+                            <% } else { %>
+                                <h3 class="productSimDetail">$<%= productos[i].price %> </h3>
+                            <% } %> 
+                            <p><%= productos[i].name %> </p>
+                            <a href="/productos/detalles/<%= productos[i].id %> ">Ver mas</a>
+                        </div>
+                    </article>
+                <% } %> 
             </div>
        </section>
     </main>
