@@ -62,6 +62,7 @@ nav form input {
 }
 
 nav form button {
+    display: none;
     font-size: 1em;
     background-color: transparent;
     border: none;
@@ -351,6 +352,10 @@ footer section.links li a {
 
     header img {
         width: 150px;
+    }
+
+    nav form button {
+        display: inline;
     }
 
     main section.main-product div {
