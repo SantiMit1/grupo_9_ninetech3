@@ -105,6 +105,18 @@ let productos = [
         ],
         image: "cpu ryzen.jpg"
     },
+    {
+        id:5,
+        name: "TECLADO MECANICO HYPERX ALLOY FPS PRO",
+        price: 12620,
+        description: [
+            "Estructura sólida de acero",
+            "Teclas mecánicas CHERRY® MX",
+            "Diseño portátil con cable extraíble",
+            "Modo de juego, 100% anti-ghosting y funciones N-key rollover"
+        ],
+        image: "teclado hyperx.jpg"
+    }
 ]
 
 module.exports = productos;
