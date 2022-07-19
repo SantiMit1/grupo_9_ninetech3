@@ -21,6 +21,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(to top, #f0f0f0, #c5c5c5);
 }
 
 nav ul.desktop {
@@ -250,6 +251,10 @@ section.payment select {
     border-radius: 5px;
     width: 70%;
     background-color: #f0f0f0;
+}
+
+footer {
+    background: linear-gradient(to bottom, #f0f0f0, #c5c5c5);
 }
 
 footer figure {
