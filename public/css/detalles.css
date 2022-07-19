@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f0f0f0;
 }
 
 header {
@@ -20,7 +21,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
 }
 
 nav ul.desktop {
@@ -54,18 +54,22 @@ nav form {
 
 nav form input {
     text-align: center;
-    border-radius: 5px;
+    border-radius: 2px 0 0 2px;
     font-size: 1em;
     width: 100%;
+    border: none;
+    padding: 5px 0;
 }
 
 nav form button {
     display: none;
     font-size: 1em;
-    background-color: transparent;
+    background-color: white;
     border: none;
     color: black;
-    margin-left: 5px;
+    margin-left: 0;
+    padding: 5px;
+    border-radius: 0 2px 2px 0;
 }
 
 nav form.active {
@@ -81,7 +85,7 @@ div#burger-menu {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    background-color: white;
+    background-color: #f0f0f0;
     transition: max-height .5s;
 }
 
@@ -140,6 +144,10 @@ main .product-specification {
     background-color: #EEEEEE;
     margin: 0 0 0 auto;
     padding: 12px;
+}
+
+.main-section {
+    background-color: white;
 }
 
 .main-section .img-container {
@@ -324,7 +332,7 @@ section.descriptionSection .descriptionSectionDetails .details li{
 
 hr {
     width: 100%;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 section.similarProducts h2 {
@@ -414,6 +422,7 @@ section.similarProducts .similarProd a:hover {
         width: 0;
         left: 0;
         transition: .3s;
+        margin: 0 auto;
     }
 
     nav ul.desktop li a:hover::after {

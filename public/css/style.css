@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
-    background: linear-gradient(to bottom, black, rgb(0, 55, 92) 80%);
-    color: white;
+    background-color:#f0f0f0;
+    color: black;
 }
 
 header {
@@ -22,7 +22,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
 }
 
 nav ul.desktop {
@@ -41,7 +40,7 @@ nav li, ul.burger {
 
 nav li a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 nav form {
@@ -56,18 +55,22 @@ nav form {
 
 nav form input {
     text-align: center;
-    border-radius: 5px;
+    border-radius: 2px 0 0 2px;
     font-size: 1em;
     width: 100%;
+    border: none;
+    padding: 5px 0;
 }
 
 nav form button {
     display: none;
     font-size: 1em;
-    background-color: transparent;
+    background-color: white;
     border: none;
-    color: white;
-    margin-left: 5px;
+    color: black;
+    margin-left: 0;
+    padding: 5px;
+    border-radius: 0 2px 2px 0;
 }
 
 nav form.active {
@@ -83,7 +86,7 @@ div#burger-menu {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    background-color: black;
+    background-color: #f0f0f0;
     transition: max-height .5s;
 }
 
@@ -103,7 +106,7 @@ div#burger-menu ul.burger.active {
 }
 
 div#burger-menu ul.burger a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -158,6 +161,17 @@ main section.categories article.main-category img {
     margin: 0 auto;
 }
 
+main section.categories article.main-category img,
+main section.categories article.sub-categories img {
+    box-shadow: 0px 0px 10px 1px #36aeff;
+    transition: box-shadow .5s;
+}
+
+main section.categories article.main-category img:hover,
+main section.categories article.sub-categories img:hover {
+    box-shadow: 0px 0px 10px 1px black;
+}
+
 main section.categories article.sub-categories img {
     width: 100%;
     max-height: 100px;
@@ -167,8 +181,8 @@ main .divisor {
     text-align: center;
     margin: 3px;
     padding: 30px 0;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     font-size: 30px;
 }
 
@@ -183,12 +197,12 @@ main section.products article {
     margin: 15px;
     width: 70%;
     position: relative;
-    box-shadow: 0px 0px 10px 1px rgb(1, 107, 179);
+    box-shadow: 0px 0px 10px 1px #36aeff;
     transition: box-shadow .5s;
 }
 
 main section.products article:hover {
-    box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px black;
 }
 
 main section.products article img {
@@ -198,9 +212,9 @@ main section.products article img {
 
 main section.products article div.details {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: background-color .5s;
-    color: black;
+    color: white;
     width: 100%;
     text-align: center;
     padding: 5px;
@@ -209,16 +223,7 @@ main section.products article div.details {
 }
 
 main section.products article:hover div.details {
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-main section.products article div.details a {
-    color: black;
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 2px;
-    padding: 0 8px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 main section.products article div.details p {
@@ -231,7 +236,7 @@ main section.products article div.details p span {
 }
 
 footer figure {
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 
@@ -240,7 +245,7 @@ footer img {
 }    
 
 footer section.links {
-    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    border-top: 1px dashed rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -256,7 +261,7 @@ footer section.links li {
 footer section.links li a {
     margin: 10px 5px;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 
@@ -274,22 +279,19 @@ footer section.links li a {
     }
 
     nav ul.desktop li a {
-        color: #a0a0a0;
+        color: black;
         transition: .3s;
-    }
-
-    nav ul.desktop li a:hover {
-        color: white;
     }
 
     nav ul.desktop li a::after {
         content: "";
         display: block;
-        background-color: white;
+        background-color: black;
         height: 3px;
         width: 0;
         left: 0;
         transition: .3s;
+        margin: 0 auto;
     }
 
     nav ul.desktop li a:hover::after {

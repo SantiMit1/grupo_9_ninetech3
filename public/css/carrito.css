@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f0f0f0;
 }
 
 header {
@@ -20,7 +21,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
 }
 
 nav ul.desktop {
@@ -54,18 +54,22 @@ nav form {
 
 nav form input {
     text-align: center;
-    border-radius: 5px;
+    border-radius: 2px 0 0 2px;
     font-size: 1em;
     width: 100%;
+    border: none;
+    padding: 5px 0;
 }
 
 nav form button {
     display: none;
     font-size: 1em;
-    background-color: transparent;
+    background-color: white;
     border: none;
     color: black;
-    margin-left: 5px;
+    margin-left: 0;
+    padding: 5px;
+    border-radius: 0 2px 2px 0;
 }
 
 nav form.active {
@@ -81,7 +85,7 @@ div#burger-menu {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    background-color: white;
+    background-color: #f0f0f0;
     transition: max-height .5s;
 }
 
@@ -123,6 +127,7 @@ section.products {
     width: 80%;
     margin: 0 auto;
     border: 1px solid black;
+    background-color: white;
 }
 
 section.products article {
@@ -244,6 +249,7 @@ section.payment select {
     padding: 5px 10px;
     border-radius: 5px;
     width: 70%;
+    background-color: #f0f0f0;
 }
 
 footer figure {
@@ -305,6 +311,7 @@ footer section.links li a {
         width: 0;
         left: 0;
         transition: .3s;
+        margin: 0 auto;
     }
 
     nav ul.desktop li a:hover::after {
