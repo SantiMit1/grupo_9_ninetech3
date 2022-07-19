@@ -19,6 +19,10 @@ header figure {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
+header .close{
+    display: none;
+}
+
 header figure img.logo {
     width: 150px;
 }
@@ -138,11 +142,32 @@ aside figure img {
 
 @media (min-width: 996px) { /*DESKTOP*/
     
-    header {
+    header figure {
         display: none;
     }
-    
-    
+
+    header {
+        margin-bottom: 0;
+    }
+
+    header a {
+        color: inherit;
+        transition: color .2s;
+    }
+
+    header a:hover {
+        color: red;
+    }
+
+    header a i.close {
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
     main {
         display: flex;
         flex-direction: row;
