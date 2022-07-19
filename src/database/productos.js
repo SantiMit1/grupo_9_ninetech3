@@ -116,6 +116,89 @@ let productos = [
             "Modo de juego, 100% anti-ghosting y funciones N-key rollover"
         ],
         image: "teclado hyperx.jpg"
+    },
+    {
+        id: 6,
+        name: "AURICULAR HYPERX CLOUD ALPHA",
+        price: 17259,
+        description: [
+            "Tipo de parlante: Neodimio, 50mm",
+            "Sensibilidad: 98dBSPL / mW a 1kHz",
+            "Frecuencia: 13 Hz–27 000 Hz",
+            "Impedancia: 65 Ω",
+            "Longitud y tipo de cable:  Cable de auriculares extraíble (1,3 m) + alargador para PC (2 m) con control para subir, bajar volumen y silenciar micrófono. ",
+            "Conector: 1 jack de 3.5mm + extensión Y a 2 plugs. ",
+            "Peso con microfono: 336g",
+            "Tipo de microfono: Condensador electret.",
+            "Direccionalidad: Omnidireccional, con cancelación de ruido",
+            "Frecuencia: 50 Hz-18 000 Hz.",
+            "Sensibilidad: -43 dBV (0 dB=1 V/Pa, 1 kHz)."
+        ],
+        image: "auriculares hyperx.jpg"
+    },
+    {
+        id:7,
+        name: "AURICULAR INALAMBRICO LOGITECH G G733",
+        price: 26549,
+        description: [
+            "Transductor: PRO-G 40 mm",
+            "Respuesta de frecuencia: 20 Hz-20 kHz",
+            "Impedancia: 39 ohmios (pasiva), 5 kilohmios (activa)",
+            "Sensibilidad: 87,5 dB SPL/mW",
+            "Patrón de captación de micrófono: Cardioide (unidireccional)",
+            "Tamaño: 6 mm",
+            "Respuesta de frecuencia: 100 Hz - 10 kHz",
+            "Tipo de conexión: Tecnología inalámbrica LIGHTSPEED a través de USB"
+        ],
+        image: "auriculares logitech.jpg"
+    },
+    {
+        id: 8,
+        name: "MOUSE COOLER MASTER MM711",
+        price: 6289,
+        description: [
+            "Color del mouse  Blanco",
+            "Tratamiento de superficies  Mate, brillant",
+            "Led del mouse Sí, RGB en rueda y logo",
+            "Sensor de ratón Pixart PMW3389" ,
+            "Cpi / dpi 7 niveles (400, 800, 1200 (predeterminado), 1600, 3200, 6400, 16000)" ,
+            "Velocidad de seguimiento del mouse  400 ips" ,
+            "Distancia de despegue del mouse  <~ 2 mm" ,
+            "Tasa de sondeo  1000 hz" ,
+            "Aceleración del ratón  50 gramos" ,
+            "Procesador de ratón  ARM cortex M0 + de 32 bits" ,
+            "Memoria incorporada 512 kb" ,
+            "Vida útil del mouse (interruptores l / r)  OMRON, 20 millones" ,
+            "Botones del mouse  6" ,
+            "Software  Sí, soporte cooler master masterplus +  Longitud del cable del mouse  Cable fijo ultraweave, 1,8 m" ,
+            'Dimensión del ratón 116,5 x 62,4 x 38,3 mm / 4,587 "x 2,457" x 1,508 "(largo x ancho x alto)' 
+        ],
+        image: "mouse cooler master.jpg"
+    },
+    {
+        id: 9,
+        name: "FUENTE COOLER MASTER 850W V2 80+ GOLD FULL MODULAR",
+        price: 35159,
+        description: [
+            "Versión atx versión atx 12v. 2.41",
+            "PFC activo",
+            "Voltaje de entrada 100-240v",
+            "Corriente de entrada 12-6a",
+            "Frecuencia de entrada 47-63hz",
+            "Dimensiones (l x an x al) 160x150x86mm",
+            "Tamaño del ventilador 120 mm",
+            "Cojinete de ventilador hdb",
+            "Velocidad del ventilador 1500 rpm",
+            "Nivel de ruido @ 20% 0 dba",
+            "Nivel de ruido @ 50% 17,8 dba",
+            "Nivel de ruido @ 100% 25,9 dba",
+            "Eficiencia ≥90% a carga típica",
+            "Calificación 80+ GOLD",
+            "mtbf >100.000 horas",
+            "protecciones ovp, opp, otp, scp, ocp, uvp",
+            "regulador tuv, ce, ccc, eac, rcm, ctuvus, fcc, bsmi, bis, ukca"
+        ],
+        image: "fuente cooler master.jpg"
     }
 ]
 
