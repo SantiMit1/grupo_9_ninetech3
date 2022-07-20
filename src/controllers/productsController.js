@@ -15,6 +15,12 @@ let controller = {
             producto: producto,
             productos: productos
         });
+    },
+
+    productos: (req, res) => {
+        res.render("productos", {
+            productos: productos
+        })
     }
 }
 
