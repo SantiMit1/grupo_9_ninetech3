@@ -3,13 +3,12 @@
 <head>
     <%- include("./partials/head.ejs") %> 
     <title>Carrito</title>
-    <link rel="stylesheet" href="/css/carrito.css">
 </head>
 <body>
     <%- include("./partials/header.ejs") %> 
     <main>
         <h3 class="titulo"><i class="fa-solid fa-cart-shopping"></i> Productos en su carrito</h3>
-        <section class="products">
+        <section class="cart-products">
             <article>
                 <div class="details">
                     <img src="/img/Productos/disco ssd.jpg" alt="DISCO SOLIDO SDD 240GB">
@@ -61,7 +60,7 @@
                 </div>
             </article>
         </section>
-        <hr class="divisor">
+        <hr class="cart-divisor">
         <section class="payment">
             <form method="GET" action="#">
                 <article>

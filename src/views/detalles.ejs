@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
     <%- include("./partials/head.ejs") %> 
-    <title><%= producto.name %></title>
-    <link rel="stylesheet" href="/css/detalles.css">
+    <title>Ninetech - <%= producto.name %></title>
 </head>
 <body>
     <%- include("./partials/header.ejs") %> 
     <main>
        <section class="main-section">
-           <div class="contenedor">
+           <div class="details-container">
                <div class="detail-left">
-                <div class="tittleDesk">
+                <div class="titleDesk">
                     
                     <h2><%= producto.name %> </h2>
                     <br>                    
@@ -22,7 +21,7 @@
                      </div>
                </div>
                     <div class="product-specification">
-                        <div class="product-tittle">
+                        <div class="product-title">
                             <h2><%= producto.name %> </h2>
                         </div>
                     <div class="price-product">
@@ -83,11 +82,11 @@
                 </div>
        </section>
             </div>
-            <hr>
+            <hr style="margin: 0 auto 35px;">
 
        <section class="descriptionSection">
             <div class="descriptionSectionDetails">
-                <div class="detailsTittle">
+                <div class="detailsTitle">
                     <h2>Especificaciones:</h2>
                 </div>
                 <div class="details">
