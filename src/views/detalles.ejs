@@ -28,9 +28,9 @@
                         <div class="precioEspecial">
                             <% if (producto.enOferta) { %>
                                 <div class="descuento">
-                                    <h2>$<%= Math.floor(producto.price - (producto.price * producto.discount)) %> </h2>
+                                    <h2>$<%= Math.floor(producto.price - (producto.price * (producto.discount / 100))) %> </h2>
                                     <p><s>$<%= producto.price %> </s></p>
-                                    <strong><%= producto.discount * 100 %>%OFF </strong>
+                                    <strong><%= producto.discount %>%OFF </strong>
                                 </div>
                             <% } else {%>
                                 <div class="descuento">

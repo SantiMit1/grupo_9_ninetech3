@@ -43,7 +43,7 @@
                         <a href="/productos/detalles/<%= producto.id %>">
                             <div class="details">
                                 <h4><%= producto.name %> </h4>
-                                <p>$<%= Math.floor(producto.price - (producto.price * producto.discount)) %>  <span>$<%= producto.price %> </span></p>
+                                <p>$<%= Math.floor(producto.price - (producto.price * (producto.discount / 100))) %>  <span>$<%= producto.price %> </span></p>
                             </div>
                             <img src="/img/Productos/<%= producto.image %> " alt="<%= producto.name %>">
                         </a>
