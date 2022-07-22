@@ -458,6 +458,24 @@ main .product-specification {
     padding: 12px;
 }
 
+main .product-specification .edit-delete {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+main .product-specification .edit-delete form {
+    width: 30%;
+}
+
+
+main .product-specification .edit-delete button {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    color: white;
+}
+
 .main-section {
     background-color: white;
 }

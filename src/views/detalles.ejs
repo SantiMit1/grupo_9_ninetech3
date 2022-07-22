@@ -79,6 +79,14 @@
                         
 
                     </div>
+                    <div class="edit-delete">
+                        <form action="/productos/detalles/<%= producto.id %>/editar?_method=put">
+                            <button type="submit" style="background-color: #3483FA;">Editar</button>
+                        </form>
+                        <form action="/productos/detalles/<%= producto.id %>/borrar?_method=delete">
+                            <button type="submit" style="background-color: #C90000;">Borrar</button>
+                        </form>
+                    </div>
                 </div>
        </section>
             </div>
