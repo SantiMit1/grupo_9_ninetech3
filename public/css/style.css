@@ -855,6 +855,123 @@ section.payment select {
     background-color: #f0f0f0;
 }
 
+/* ------- Crear - Editar  ----------- */
+
+
+
+
+
+
+
+
+main section form.form-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 10% 30px;
+    background-color: white;
+
+
+
+}
+
+main form.form-create div.form-div {
+    width: 75%;
+    margin-top: 40px;
+
+}
+
+main form.form-create div.form-div div.off {
+   margin-top: 6px;
+}
+
+main form.form-create div.form-div div.off input{
+    height: 12px;
+    width: 20px;
+}
+
+main form.form-create div.form-div input {
+    width: 100%;
+    height: 35px;
+    padding: 8px;
+}
+
+main form label.createLabel {
+    background-color: #2678C4;
+    color: white;
+    display: block;
+    padding: 8px;
+}
+
+#fileProduct {
+    padding: 0px;
+    padding-top: 8px;
+}
+
+main form.form-create textarea {
+    width: 100%;
+    padding: 8px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+form.form-create h2.tittle {
+    margin-top: 20px;
+    background: #2678C4;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 170px;
+}
+
+
+form.form-create div.buttonDiv {
+    width: 75%;
+    text-align: start;
+    order: 3;
+    margin-top: 28px;
+}
+
+
+button.buttonSave {
+    font-size: 18px;
+    margin-bottom: 30px;
+    background-color: #2678C4;
+    color: white;
+    padding: 12px;
+    border: none;
+    transition: all 250ms;
+    border-radius: 0 0 20px 0;
+    
+}
+
+button.buttonSave:hover {
+    background-color: #6db5f8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) { /*TABLET*/
@@ -1014,6 +1131,8 @@ section.payment select {
     }
 
 }
+
+
 
 @media (min-width: 1024px) { /*DESKTOP*/
 
@@ -1176,6 +1295,52 @@ section.payment select {
     section.payment form article {
         width: 27%;
     }
+
+
+
+
+
+
+
+    main section form.form-create {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: 60px 8% 30px;
+    }
+
+
+    main form.form-create div.form-div {
+        width: 40%;
+        margin: 30px;
+    
+    }
+
+    main form.form-create div.form-div input {
+        width: 100%;
+    }
+
+    form.form-create div.form-tittle {
+        width: 87%;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+
+    #descripcion {
+        order: 2;
+    }
+
+    form.form-create div.buttonDiv {
+        order: 3;
+        width: 87%;
+        margin-bottom: 20px;
+    }
+
+
+
+
 
 }
 

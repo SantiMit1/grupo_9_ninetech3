@@ -21,6 +21,17 @@ let controller = {
         res.render("productos", {
             productos: productos
         })
+    },
+    crear: (req, res)=>{
+        res.render("crear")
+    },
+    editar: (req, res)=>{
+        const id = Number(req.params.id);
+        const producto = productos.find(producto => producto.id === id);
+        res.render("editar", {
+            producto: producto,
+            productos: productos
+        });
     }
 }
 

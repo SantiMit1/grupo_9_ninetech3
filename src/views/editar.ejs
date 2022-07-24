@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head.ejs") %> 
+    <title>Ninetech - Home</title>
+</head>
+<body>
+    <%- include("./partials/header.ejs") %> 
+    <main>
+        <section>
+            <div class="contain-form">
+
+                    
+                <form class="form-create" action="/src/views/create.ejs" method="post" >
+                    <div class="form-tittle">
+                        <h2 class="tittle">Editar Producto </h2>
+                    </div>
+                        
+                        
+                    <div class="form-div">
+                        <label class="createLabel" for="nombre">Nombre del producto </label>
+                        <input type="text" name="nombre" id="nombre" value="<%= producto.name %>">
+                    </div>
+                    <div class="form-div" id="descripcion">
+                        <label class="createLabel" for="descripcion" id="descripcion">Descripcion </label>
+                        <textarea name="descripcion" id="" cols="20" rows="5"><%= producto.description %></textarea>
+                    </div>
+                    <div class="form-div">
+                        <label class="createLabel" for="">Imagen </label>
+                        <input type="file" name="" id="fileProduct">
+                    </div>
+                    <div class="form-div">
+                        <label class="createLabel" for="">Precio </label>
+                        <input type="text"  name="precio" id="precio" value="<%= producto.price %>">
+                    </div>
+                    <div class="form-div">
+                        <label class="createLabel" class="createLabel" for="">Descuento </label>
+                        <input type="number" name="descuento" id="" value="<%= producto.discount %>" max="100">
+                    </div>
+                    <div class="form-div" >
+                        <label class="createLabel" for="enOferta">En oferta </label>
+                        <div class="off">
+                            <label for="trueOff">Si <input type="radio" name="radio" id="trueOff"></label>
+                            <label for="falseOff">No<input type="radio" name="radio" id="falseOff"></label>
+                        </div>
+                    </div>
+                    <div class="buttonDiv">
+                        <button class="buttonSave">Guardar Producto</button>
+                    </div>
+               
+            </div>
+
+            </form>
+        </section>
+
+        
+    </main>
+    <%- include("./partials/footer.ejs") %> 
+</body>
+</html>
